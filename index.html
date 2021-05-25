@@ -19,6 +19,28 @@
             height: auto;
             margin: auto;
         }
+
+        form {
+            width: 400px;
+            margin: auto;
+        }
+
+        .search {
+            width: 70%;
+            padding-right: 10px;
+            box-sizing: border-box;
+            border-radius: 10%;
+            border-width: 5px;
+            border-style: solid;
+
+        }
+
+        .submit {
+            width: 20%;
+            height: 50px;
+            background-color: wheat;
+            color: white;
+        }
     </style>
 
 
@@ -27,13 +49,15 @@
     <div class="flex-container">
         <div class="flex-child">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-                alt="Google Logo">
+                alt="Google Logo" id="Google Logo">
         </div>
     </div>
 
+    <form>
+        <input type="text" name="seach" placeholder="Why are things are the way they are?" class="search">
 
-
-
+        <button type="submit" class="submit" value="Search"></button>
+    </form>
 </body>
 
 </html>

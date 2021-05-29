@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" </head>
+    <meta charset="UTF-8" title="Google" </head>
 
     <style>
         * {
@@ -14,7 +14,7 @@
             height: 300px;
             align-items: center;
             align-content: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
             margin-left: -1rem;
         }
 
@@ -24,7 +24,6 @@
             text-align: center;
             align-content: center;
             align-items: center;
-
         }
 
         img {
@@ -33,7 +32,6 @@
             margin-right: auto;
             width: 18rem;
         }
-
 
         .searchArea {
             font-size: 1rem;
@@ -51,18 +49,26 @@
 
         .searchBox {
             background-color: white;
-            position: relative;
-            margin-left: 1rem;
-
+            position: absolute;
+            top: 0;
+            left: 60px;
+            width: 75%;
+            height: 100%;
+            border: none;
         }
 
-        .searchBox::placeholder {
-            opacity: 0.3;
-            padding-left: 1rem;
+        .searchBox:focus {
+            outline: none;
         }
 
-        .searchBox:hover {
-            box-shadow: 10px 10px red;
+        .searchArea:hover {
+            outline: none;
+            box-shadow: 1px 1px 8px 1px gainsboro;
+        }
+
+        .searchArea:focus {
+            outline: none;
+            box-shadow: 1px 1px 8px 1px gainsboro;
         }
 
         .container {
@@ -71,19 +77,45 @@
             position: relative;
             margin: auto;
             text-align: center;
-            border: tomato;
-            border-style: solid;
-            height: 1.5rem;
-            margin-top: -5rem;
-            width: 45rem;
+            height: 1.75rem;
+            margin-top: -4rem;
+            width: 36rem;
         }
 
         .search-icon {
             position: absolute;
-            top: 0px;
+            top: 15%;
             left: 30px;
-            opacity: 25%;
-            width: 2rem;
+            opacity: 35%;
+            width: 1.4rem;
+        }
+
+        .button-container {
+            display: flex;
+            height: 2.2rem;
+            width: 26%;
+            justify-content: space-evenly;
+            margin: auto;
+            margin-top: 2.5rem;
+
+        }
+
+        .button-style {
+            outline: none;
+            border: none;
+            background-color: #f3f4f4;
+            opacity: 70%;
+            font-size: 0.9rem;
+            border-radius: 3%;
+            width: 8rem;
+        }
+
+        .button-style:hover {
+            outline: gainsboro;
+            border: solid gainsboro;
+            border-width: 1px;
+            box-shadow: 1px 1px 8px 1px gainsboro;
+
         }
     </style>
 
@@ -99,10 +131,16 @@
     <div class="container">
         <div class="searchArea">
             <form>
-                <input type="text" name="text" placeholder="Search" class="searchBox">
+                <input type="text" name="text" class="searchBox" id="Search Box">
                 <img src="searchIcon.png" class="search-icon">
             </form>
         </div>
+    </div>
+
+    <div class="button-container">
+        <input type="button" value="Google Search" class="button-style">
+
+        <input type="button" value="I'm Feeling Lucky" class="button-style">
     </div>
 </body>
 

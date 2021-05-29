@@ -211,3 +211,13 @@
         .bottom-List:hover{
             text-decoration: underline;
         }
+
+        .navbar-Bottom-Right{
+            display: flex;
+            list-style-type: none;
+            position: fixed;
+            bottom:0;
+            right: 0;
+            width: 20%;
+            background-color: #f3f3f2;
+        }

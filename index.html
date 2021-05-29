@@ -3,126 +3,10 @@
 
 <head>
     <meta charset="UTF-8" title="Google" </head>
-
-    <style>
-        * {
-            background-color: white;
-        }
-
-        .flex-container {
-            display: flex;
-            height: 300px;
-            align-items: center;
-            align-content: center;
-            margin-top: 2rem;
-            margin-left: -1rem;
-        }
-
-        .flex-child {
-            width: 100%;
-            display: flex;
-            text-align: center;
-            align-content: center;
-            align-items: center;
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 18rem;
-        }
-
-        .searchArea {
-            font-size: 1rem;
-            width: 100%;
-            height: 100%;
-            border: #e3e7e8;
-            border-style: solid;
-            padding: 0.5rem;
-            background-color: white;
-            border-radius: 40px;
-            outline: none;
-            border-width: thin;
-            margin-left: 1rem;
-        }
-
-        .searchBox {
-            background-color: white;
-            position: absolute;
-            top: 0;
-            left: 60px;
-            width: 75%;
-            height: 100%;
-            border: none;
-        }
-
-        .searchBox:focus {
-            outline: none;
-        }
-
-        .searchArea:hover {
-            outline: none;
-            box-shadow: 1px 1px 8px 1px gainsboro;
-        }
-
-        .searchArea:focus {
-            outline: none;
-            box-shadow: 1px 1px 8px 1px gainsboro;
-        }
-
-        .container {
-            display: flex;
-            align-items: center;
-            position: relative;
-            margin: auto;
-            text-align: center;
-            height: 1.75rem;
-            margin-top: -4rem;
-            width: 36rem;
-        }
-
-        .search-icon {
-            position: absolute;
-            top: 15%;
-            left: 30px;
-            opacity: 35%;
-            width: 1.4rem;
-        }
-
-        .button-container {
-            display: flex;
-            height: 2.2rem;
-            width: 26%;
-            justify-content: space-evenly;
-            margin: auto;
-            margin-top: 2.5rem;
-
-        }
-
-        .button-style {
-            outline: none;
-            border: none;
-            background-color: #f3f4f4;
-            opacity: 70%;
-            font-size: 0.9rem;
-            border-radius: 3%;
-            width: 8rem;
-        }
-
-        .button-style:hover {
-            outline: gainsboro;
-            border: solid gainsboro;
-            border-width: 1px;
-            box-shadow: 1px 1px 8px 1px gainsboro;
-
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 
 <body>
-
-    <div class="flex-container">
+    <div class=" flex-container">
         <div class="flex-child">
             <img src="GoogleLogo.png" alt="Google Logo" id="Google Logo">
         </div>
@@ -139,7 +23,6 @@
 
     <div class="button-container">
         <input type="button" value="Google Search" class="button-style">
-
         <input type="button" value="I'm Feeling Lucky" class="button-style">
     </div>
 </body>
